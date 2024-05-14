@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
-import './styles.css';
 
 function AddMovieForm(props) {
   const [movie, setMovie] = useState({
@@ -22,7 +21,7 @@ function AddMovieForm(props) {
       return;
     }
 
-    // Call addMovie function passed as prop
+    // Kallar på addMovie funktionen som en prop
     props.addMovie(movie);
 
     // Clear form fields
@@ -31,13 +30,13 @@ function AddMovieForm(props) {
       rating: '',
     });
 
-    // Clear form inputs
+    // Rensa formuläret
     e.target.reset();
   };
 
   return (
     <Form className="movie-form" onSubmit={handleSubmit}>
-      <h3>Lägg till en film</h3>
+      <h3>♡ Lägg till en film ♡</h3>
       <hr />
       <div></div>
       <Form.Group className="mb-3" controlId="formGroupTitle">
@@ -72,7 +71,7 @@ function AddMovieForm(props) {
         <div className="valid-feedback">Det ser bra ut</div>
         <div className="invalid-feedback">Var god fyll i ett betyg</div>
       </Form.Group>
-      <button type="submit">Lägg till film</button>
+      <button className="sort-butt" type="submit">Lägg till film</button>
       {/* töm formulär */}
     </Form>
   );

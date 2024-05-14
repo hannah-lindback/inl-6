@@ -15,7 +15,7 @@ export default function Home() {
     setMovies([...movies, newMovie]);
   }
   return (
-    <div> {/* Wrap AddMovieForm and MovieList inside a parent element */}
+    <div> 
       <AddMovieForm addMovie={addMovie} />
       <MovieList movies={movies} setMovies={setMovies} />
       <OrderByAlpha movies={movies} setMovies={setMovies} />
@@ -23,12 +23,4 @@ export default function Home() {
     </div>
   );
 }
-
-//addmovie
-
-//deleteMovie
-
-//sortAlfabetic
-
-//sortRating
 

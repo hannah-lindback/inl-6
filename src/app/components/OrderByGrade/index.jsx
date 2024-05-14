@@ -1,6 +1,8 @@
 import React from 'react';
 
 
+
+
 function OrderByGrade({ movies, setMovies }) {
 
     const sortRating = () => {
@@ -11,7 +13,7 @@ function OrderByGrade({ movies, setMovies }) {
 
     return (
         <div>
-            <button onClick={sortRating}>Sortera efter betyg</button>
+            <button className="sort-butt" onClick={sortRating}>Sortera efter betyg</button>
         </div>
         );
 }

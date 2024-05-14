@@ -12,7 +12,7 @@ function OrderByAlpha({ movies, setMovies }) {
 
     return (
         <div>
-            <button onClick={sortAlfabetic}>Sortera Alfabetiskt</button>
+            <button className="sort-butt" onClick={sortAlfabetic}>Sortera Alfabetiskt</button>
         </div>
         );
 }
