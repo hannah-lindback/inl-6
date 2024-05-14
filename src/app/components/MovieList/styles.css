@@ -1,0 +1,38 @@
+
+
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    justify-content: space-between;
+    background-color: white;
+    border: 4px double #94bbe9;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#movie-list {
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 20px;
+    background: rgb(148,187,233);
+    background: linear-gradient(295deg, rgba(148,187,233,1) 0%, rgba(238,174,202,1) 100%);
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}

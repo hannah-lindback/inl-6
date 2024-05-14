@@ -30,12 +30,13 @@ function MovieList({ movies, setMovies }) {
 
     
     return (
-        <div>
-            <h2> Movie list</h2>
+        <div id="movie-list">
+            <h2>♡ Filmlista ♡</h2>
+            <hr></hr>
             <ul>
                 {movies.map((movie, index) => (
-                    <li key={index}>{movie.title} {appendStars(movie.rating)}
-                        <button onClick={() => handleDelete(index)}>Radera filmen</button>
+                    <li key={index}>{movie.title} <div className="icon-container">{appendStars(movie.rating)}
+                        <button className="icon-container" onClick={() => handleDelete(index)}><img src='./delete.png'></img></button></div>
                     </li>
                 ))}
             </ul>

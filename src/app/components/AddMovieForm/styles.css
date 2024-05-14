@@ -1,7 +1,8 @@
 Form {
     display: flex;
     flex-direction: column;
-    background-color: grey;
+    background: rgb(238,174,202);
+    background: linear-gradient(295deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     margin-top: 10%;
     margin-right: 10%;
     margin-left: 10%;
