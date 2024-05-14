@@ -1,0 +1,15 @@
+Form {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 20px;
+}
+
+Button {
+    background-color: white;
+    justify-content: center;
+    display: flex;
+}

@@ -1,12 +1,23 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import AddMovieForm from './components/AddMovieForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import MovieList from './components/MovieList';
+import OrderByAlpha from './components/OrderByAlpha';
 
 
 export default function Home() {
+  const [movies, setMovies] = useState([]);
+
+  const addMovie = (newMovie) => {
+    setMovies([...movies, newMovie]);
+  }
   return (
-    <AddMovieForm />
+    <div> {/* Wrap AddMovieForm and MovieList inside a parent element */}
+      <AddMovieForm addMovie={addMovie} />
+      <MovieList movies={movies} setMovies={setMovies} />
+      <OrderByAlpha movies={movies} setMovies={setMovies} />
+    </div>
   );
 }
 
