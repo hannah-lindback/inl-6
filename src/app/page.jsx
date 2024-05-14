@@ -9,3 +9,12 @@ export default function Home() {
     <AddMovieForm />
   );
 }
+
+//addmovie
+
+//deleteMovie
+
+//sortAlfabetic
+
+//sortRating
+
